@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cryptocoins</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        </style> 
+
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link href="./styles/fontawesome-free-6.0.0-beta3-web/css/all.css" rel="stylesheet" />
+
+        <style ></style>
+        
+        <script defer src="./scripts/config.js"></script>
+        <script defer src="./scripts/dom.js"></script>
+        <script defer src="./scripts/script.js"></script>
+        <script>
+        /*
+            Erstelle eine Webseite auf der eine Datensammlung Deiner Wahl visualisiert wird. 
+
+            •	Optional: Abfrage wie viele Coins angezeigt werden sollen. 
+            •	Optional: Die Daten sollen im Localstorage gespeichert werden.
+            Wenn die Seite neu geladen wird, soll zunächst geprüft werden, ob Localstorage-Daten vorliegen und wenn nicht, soll die JSON-Datei geladen werden.
+
+            Bonus: Bei jedem Aufruf der Seite soll der aktuelle Kurs von allen Coins gespeichert werden, um eine Kursentwicklung darstellen zu könnnen. 
+        */
+          'use strict';
+
+
+    
+        const init = async ()=>{
+            //console.log('init');
+            // if not in localstorage yet, then try to fetch
+            renderTopCoins();
+            renderNews();
+            changeBackgroundImage();
+            setInterval(changeBackgroundImage, 7500)
+        }
+
+        document.addEventListener("DOMContentLoaded", init);
+        
+            </script>
+    </head>
+    <body>
+        
+        <div class="maincontainer">
+            
+            <div class="coinList"></div>
+            <div class="coinDetail fixedElement"><h1> <i class="fas fa-bullhorn"></i> Bitte wähle einen Coin auf der linken Seite aus für eine Detail Ansicht. </h1></div>
+            <div class="news">
+                <h1 class="blue"><i class="fab fa-bitcoin"></i> Crypo News  </i></h1>
+                <div class="news_body"></div>
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 5px;
+}
+
+i{
+    position: absolute;
+    right: 25px;
+}
+
+h1 { 
+    color:hsl(210, 90%, 25%);
+    text-align: center; 
+    padding: 5px;
+}
+
+h2,h3,h4,h5{
+    text-align: left;
+    margin-left: 5px;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.maincontainer{
+}
+
+.coinList{
+    background-color:hsla(235, 88%, 89%, 1);
+    opacity: 90%;
+    position: relative;
+    height: auto;
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: 5px 5px 3px honeydew;
+    
+}
+
+.coinDetail{
+    background-color:hsla(95, 91%, 79%, 1);
+    opacity: 90%;
+    position: fixed;
+    left: 350px;
+    top: 0px;
+    height: 650px;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: 5px 5px 3px honeydew;
+}
+
+.news{
+    background-color:hsla(142, 91%, 79%, 1);
+    opacity: 100%;
+    position: fixed;
+    left: 820px;
+    top: 0px;
+    height: 700px;
+    width: 400px;
+    margin: 20px;
+    padding-top: 50px;
+    padding: 0px;
+    border: 0px;
+    overflow: auto;
+    box-shadow: 5px 5px 3px honeydew;
+}
+
+.news_body{
+    margin-top:10px;
+    padding:20px;
+}
+
+.news h1{
+    margin:0;
+    padding: 0;
+    position: fixed;
+    width: 400px;
+}
+
+
+td{
+}
+
+.coinLogo{
+    width: 50px;
+}
+
+.red{
+    background-color: hsl(0, 90%, 60%);
+    color: honeydew;
+}
+
+.green{
+    background-color: hsl(120, 95%, 70%);
+}
+
+.yellow{
+    background-color: hsla(54, 89%, 72%, 1);
+}
+
+.blue{
+    background-color: hsla(226, 100%, 84%, 1);
+}
+
+.newsButton{
+    position: absolute;
+    right: 5px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.fa-bullhorn{
+    position: absolute;
+    right: 130px;
+    top: 300px;
+    font-size: 15rem;
+}
+
+.youtube{
+    height: 70px;
+    margin-top: 50px;
+    border: black solid 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: hsla(226, 100%, 84%, 1);
+}
